@@ -1,0 +1,45 @@
+@use "../../styles/variables.scss" as *;
+
+.error {
+  text-align: center;
+  &-404 {
+    margin-top: 6rem;
+    margin-bottom: 0.6875rem;
+    color: $color-primary;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 142.6%;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 96px;
+    }
+  }
+  &-text {
+    margin: 0 auto;
+    margin-top: 0.625rem;
+    color: $color-primary;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 142.6%;
+
+    @media (max-width: $breakpoint-mobile) {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+    }
+  }
+  &-link {
+    display: block;
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+    color: $color-secondary;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px;
+    }
+  }
+}

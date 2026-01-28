@@ -1,0 +1,38 @@
+@use "../../styles/variables.scss" as *;
+
+.host-info {
+  display: flex;
+  margin: 20px 0 0 0;
+  align-items: center;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0;
+  }
+}
+
+.host-name {
+  font-family: $font-family-base;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 143%;
+  color: $color-primary;
+  margin: 0 10px 0 0;
+  text-align: right;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 12px;
+    margin: 0 5px 0 0;
+  }
+}
+
+.host-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 48px;
+    height: 48px;
+  }
+}

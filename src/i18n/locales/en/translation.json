@@ -1,0 +1,18 @@
+{
+	"navbar": {
+		"home": "Home",
+		"about": "About",
+		"contact": "Contact",
+		"welcome": "Welcome to our application"
+	},
+	"home": {
+		"title": "Welcome in English",
+		"description": "This is an example application with internationalization.",
+		"button": "Click me"
+	},
+	"language": {
+		"fr": "French",
+		"en": "English",
+		"es": "Spanish"
+	}
+}

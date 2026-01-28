@@ -1,0 +1,18 @@
+{
+	"navbar": {
+		"home": "Accueil",
+		"about": "À propos",
+		"contact": "Contact",
+		"welcome": "Bienvenue sur notre application"
+	},
+	"home": {
+		"title": "Bienvenue en Français",
+		"description": "Ceci est un exemple d'application avec internationalisation.",
+		"button": "Cliquez-moi"
+	},
+	"language": {
+		"fr": "Français",
+		"en": "Anglais",
+		"es": "Espagnol"
+	}
+}

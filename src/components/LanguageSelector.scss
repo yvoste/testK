@@ -1,0 +1,85 @@
+.language-selector {
+    position: relative;
+    display: inline-block;
+
+    &__current {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        background: transparent;
+        border: 2px solid #ff6060;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #ff6060;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #ff6060;
+            color: white;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        min-width: 150px;
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        padding: 10px 15px;
+        background: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: #f5f5f5;
+        }
+
+        &.active {
+            background: #ff6060;
+            color: white;
+        }
+
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    .language-flag {
+        font-size: 16px;
+    }
+
+    .language-name {
+        font-weight: 500;
+    }
+
+    .language-arrow {
+        font-size: 12px;
+        transition: transform 0.2s ease;
+    }
+
+    &__current:hover .language-arrow {
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,14 @@
+@use "../../styles/variables.scss" as *;
+
+.rating {
+  display: flex;
+  gap: 10px;
+
+  & img {
+    @media (max-width: $breakpoint-mobile) {
+      width: 18px;
+      height: 18px;
+      gap: 5px;
+    }
+  }
+}

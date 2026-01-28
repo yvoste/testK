@@ -1,0 +1,90 @@
+@use "../../styles/variables.scss" as *;
+
+.collapse {
+  font-family: $font-family-base;
+  margin: 10px 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: $font-family-base;
+}
+
+.collapse-header {
+  background-color: $color-primary;
+  color: $color-tertiary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+}
+
+.collapse-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 13px;
+  }
+}
+
+.chevron-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.open {
+    transform: rotate(-180deg);
+  }
+}
+
+.collapse-content {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.6s ease;
+  background-color: lighten($color-primary, 35%);
+  border-radius: 0 0 5px 5px;
+  color: $color-secondary;
+}
+
+.collapse-content-inner {
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.collapse-description {
+  width: 40%;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
